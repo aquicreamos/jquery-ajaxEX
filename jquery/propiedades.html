@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>propiedades</title>
+	<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$("h1").click(function(event) {
+			$(this).css('font-size', '15px');
+		});
+		$('#revelar').click(function() {
+			$('ul #c p').css('background-color', '#D69221');
+		});
+		
+	});
+	</script>
+</head>
+<body>
+
+	<!--<h1 class="f">Primero</h1>
+	<hr><br/>
+	<h1 class="f">Segundo</h1>
+	<hr><br/>
+	<h1 class="f">Tercero</h1>
+	<hr><br/>
+	<h1 class="f">Cuarto</h1>
+	<hr><br/>-->
+<input type="button" id="revelar" value="revelar"><br/>
+<a href="#">enlace 1</a>
+<a href="image.jpg">enlace 2</a>
+<a href="img.php">enlace 3</a>
+<a href="image.jpg">enlace 4</a>
+<a href="#">enlace 5</a>
+
+<ul>
+		<li><p>enlace 1</p></li>
+		<li id="c">enlace 2</li>
+		<li><p>enlace 3</p></li>
+		<li>enlace</li>
+		<li id="c"><p>enlace 4</p></li>
+	</ul>	
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>propiedades</title>
+	<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<button type="button" id="asignar">asignar</button>
+<button type="button" id="retirar">retirar</button>
+
+<br>
+<div id="fdat">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores magnam fugiat quam rem quos, qui beatae non, distinctio sequi. Nostrum ullam nobis placeat dolore repudiandae quae enim amet nulla commodi.</div>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#asignar').click(function() {
+			$('#fdat').addClass('notice')
+		});
+	$('#retirar').click(function() {
+			$('#fdat').removeClass('notice');
+		});
+});
+	</script>
+</body>
+</html>

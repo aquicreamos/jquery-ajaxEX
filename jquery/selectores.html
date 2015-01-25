@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>imput</title>
+	<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('#select').click(function (e) {
+			e.preventDefault();
+			$(".im").css('color','#8000FF');
+		});
+		$('#select2').click(function (e) {
+			e.preventDefault();
+			$(".im").css('color','#FF0080');
+		});
+	});
+	</script>
+</head>
+
+<body>
+
+<p>importante funcion</p><p class="im">data función primario</p>
+	<button type="button" id="select">Seleccione aquí</button>
+	<button type="button" id="select2">Seleccione aquí</button>
+</body>
+</html>

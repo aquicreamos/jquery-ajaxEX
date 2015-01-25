@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>propiedades</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div id="x"></div>
+<div id="y"></div>
+
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$(document).mousemove(function(event) {
+		$('#x').text('Coordenada x: '+ event.clientX);
+		$('#y').text('Coordenada y: '+ event.clientY);
+		if ((event.clientX == 600 && event.clientY == 280) && ) {
+			alert('La pagina esta hubicada en la mitad (600*280)');
+		}
+			
+	});
+});
+	
+	
+</script>
+
+</body>
+</html>

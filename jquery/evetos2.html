@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>propiedades</title>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<button type="button" id="asignar">asignar</button>
+
+<br>
+<h2 id="intro">Información Importante</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores magnam fugiat quam rem quos, qui beatae non, distinctio sequi. Nostrum ullam nobis placeat dolore repudiandae quae enim amet nulla commodi.</div>
+
+
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#intro').hover(function() {
+			$('#intro').css('color', 'red');
+		}, function() {
+			$('#intro').css('color', 'blue');
+		});
+	});
+</script>
+
+</body>
+</html>

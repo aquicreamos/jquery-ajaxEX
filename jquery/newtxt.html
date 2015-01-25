@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>propiedades</title>
+	<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('#leer').click(function() {
+			alert($('p').text());
+		});
+		$('#escribir').click(function() {
+			if ($('p').text()=="texto antiguo") {
+				$('p').text('Nuevo Texto');
+			}else {
+				$('p').text('otro Texto');
+			}
+			
+		});
+	});
+	</script>
+</head>
+<body>
+<button type="button" id="leer">Leer</button>
+<button type="button" id="escribir">Escribir</button>
+<p>texto antiguo</p>
+</body>
+</html>

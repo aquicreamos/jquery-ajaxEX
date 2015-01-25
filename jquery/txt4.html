@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>propiedades</title>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<button type="button" id="asignar">asignar</button>
+<button type="button" id="retirar">retirar</button>
+
+<br>
+<div id="intro" style="display: none;">Formulario</div>
+<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores magnam fugiat quam rem quos, qui beatae non, distinctio sequi. Nostrum ullam nobis placeat dolore repudiandae quae enim amet nulla commodi.</div>
+
+
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#asignar').click(function() {
+			$('#intro').removeAttr('style');
+			$('#intro').html('<form action="" method="POST" accept-charset="utf-8"><input type="text" name="informacion" value="Contenido"><button type="button">Enviar</button></form>');
+			$('#intro').append('Por favor introduzca la información')
+		});
+	});
+</script>
+
+</body>
+</html>

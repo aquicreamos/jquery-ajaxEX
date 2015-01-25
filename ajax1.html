@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Primer Ejercicio con AJAX</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<a href="exercise.php?color=verde">verde</a>
+<a href="exercise.php?color=rojo">rojo</a>
+<a href="exercise.php?color=azul">azul</a>
+<div id="hablame"></div>
+
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a').click(function() {
+		var pg = $(this).attr('href');
+		$('#hablame').load(pg); 
+		return false;
+		});
+	});
+</script>
+
+</body>
+</html>

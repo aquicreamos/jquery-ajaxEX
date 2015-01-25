@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>propiedades</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<button type="button" id="mostrar">modificar</button>
+
+<div class="tamanio" id="tamanio"></div>
+
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	var a; 
+	a = $('#tamanio');
+		//alert('texto' + a); 
+	$('#mostrar').click(function() {
+		a.animate({margin:'50px'}, 'slow');
+		a.animate({width:100}, 'slow');
+		a.animate({height:30}, 'slow');
+		a.animate({width:120}, 'slow');
+		});
+	});
+		</script>
+
+</body>
+</html>
